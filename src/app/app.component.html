@@ -1,4 +1,8 @@
 <h1>Orbit Report</h1>
+<app-orbit-list [satellites]="displayList"></app-orbit-list>
+<!-- <app-orbit-list *ngFor = "let display of this.fetchedSatellites">{{display[0]}}</app-orbit-list> -->
+
+
 
 <div class="search-form">
 	Search: <input #searchTerm type="text" (keyup.enter)="search(searchTerm.value);" name="searchTerm"/>
@@ -8,3 +12,4 @@
 <app-orbit-counts [satellites]="displayList"></app-orbit-counts>
 
 <!-- TODO 1: add list component to app HTML -->
+
