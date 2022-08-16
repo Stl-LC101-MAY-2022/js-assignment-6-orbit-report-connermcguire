@@ -16,7 +16,6 @@ export class AppComponent {
 		this.sourceList = [];
 		this.displayList = [];
 		let satellitesUrl = 'https://handlers.education.launchcode.org/static/satellites.json';
-		console.log(Satellite)
 
 		window.fetch(satellitesUrl).then(function (response) {
 			response.json().then(function (data) {
